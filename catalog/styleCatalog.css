@@ -1,0 +1,290 @@
+@font-face {
+    font-family: Rosa Marena;
+    src: url("rosa/rosamarena.ttf");
+}
+
+body {
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-left: 162px;
+    padding-right: 162px;
+    padding-top: 69px;
+    padding-bottom: 69px;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.headerlink {
+    display: flex;
+    align-items: center;
+}
+
+.headerbutton {
+    display: flex;
+    flex-wrap: nowrap
+}
+
+.header__link {
+    padding-left: 32px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    color: #274c5b;
+    text-decoration: none;
+}
+
+.searchInput {
+    width: 300px;
+    height: 66px;
+    top: 0;
+    bottom: 0;
+    border-radius: 36px;
+    background: rgb(250, 250, 250);
+    border: none;
+}
+
+.search__button {
+    height: 66px;
+    width: 66px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50%;
+    background-color: rgb(126, 182, 147);
+    ;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cart {
+    box-sizing: border-box;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 33px;
+    width: 180px;
+    height: 66px;
+    color: rgb(39, 76, 91);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.logo__catalog {
+    height: 450px;
+    background-image: url(imgcatalog/catalog.png);
+}
+
+.logo__catalog h1 {
+    color: rgb(39, 76, 91);
+    font-family: Roboto;
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 82px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-top: 187px;
+}
+
+.shop {
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+.shop h2 {
+    /* 1 */
+    color: rgb(126, 182, 147);
+    font-family: Rosa Marena;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 3%;
+}
+
+.shop h1 {
+    color: rgb(39, 76, 91);
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 59px;
+    letter-spacing: 0%;
+}
+
+.product {
+    padding-top: 40px;
+    padding-bottom: 123px;
+    display: grid;
+    grid-template-columns: 340px 340px 340px 340px;
+    grid-template-rows: 600px 600px 600px;
+    justify-content: center;
+    gap: 17px;
+}
+
+.oil,
+.flour,
+.porridge,
+.organic__products {
+    border-radius: 30px;
+    background-color: rgb(249, 248, 248);
+}
+
+.shop__product {
+    padding-top: 10px;
+    width: 292px;
+    height: 361px;
+    justify-content: center;
+}
+
+.tag {
+    margin-top: 30px;
+    width: 90px;
+    height: 31px;
+    border-radius: 8px;
+    background: rgb(39, 76, 91);
+    color: rgb(255, 255, 255);
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.shop p {
+    color: rgb(39, 76, 91);
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.p-button {
+    min-width: 100px;
+    font-family: inherit;
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #bdc4cd;
+    color: rgb(1, 1, 1);
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.p-button:hover {
+    background: rgb(126, 182, 147);
+}
+
+.p-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #26810abe;
+}
+
+.newslatteer {
+    width: 1400px;
+    height: 323px;
+    background-image: url(imgcatalog/newslatteer.png);
+    margin-top: 150px;
+    margin-left: 246px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.newslatteer h1 {
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 59px;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 464px;
+}
+
+.newslatteer button {
+    margin-top: 25px;
+    width: 220px;
+    height: 79px;
+    border-radius: 16px;
+    background: rgb(126, 182, 147);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.email-input {
+    width: 349px;
+    height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    background-color: white;
+    color: rgb(171, 171, 171);
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.footer {
+    padding-top: 100px;
+    display: flex;
+    gap: 130px;
+    justify-content: center;
+}
+
+.ContactUs {
+    color: rgb(82, 92, 96);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 200.9%;
+    letter-spacing: 0%;
+    text-align: right;
+}
+
+.SocialMedia {
+    justify-content: center;
+    text-align: center;
+}
+
+.SocialMedia p {
+    width: 543px;
+    color: rgb(82, 92, 96);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 200%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.UtilityPages p {
+    color: rgb(82, 92, 96);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 272.9%;
+    letter-spacing: 0%;
+    text-align: left;
+}

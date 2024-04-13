@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="вёрстка, HTML, CSS, блог">
+    <meta name="description" content="Блог о процессе обучения веб-технологиям">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="styleCatalog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="headerlink">
+            <a href="C:\Users\Olyly\Desktop\graduate work\index.html"><img src="imgcatalog/header.png" alt="logo"></a>
+            <a class="header__link" href="#">О нас</a>
+            <a class="header__link" href="#">КАТАЛОГ</a>
+            <a class="header__link" href="#">Новости</a>
+            <a class="header__link" href="#">Контакты</a>
+        </div>
+
+        <div class="headerbutton">
+            <input type="text" class="searchInput" placeholder="">
+            <button class="search__button" onclick="search()"> <svg width="21.000000" height="21.000000" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <desc>
+                    Created with Pixso.
+            </desc>
+            <defs/>
+            <path id="Vector" d="M20.67 18.89L15.91 14.13C17.06 12.6 17.68 10.74 17.68 8.84C17.68 3.96 13.71 0 8.83 0C3.96 0 0 3.96 0 8.84C0 13.71 3.96 17.68 8.83 17.68C10.74 17.68 12.6 17.06 14.13 15.91L18.89 20.67C19.13 20.89 19.44 21 19.77 20.99C20.09 20.99 20.4 20.85 20.62 20.62C20.85 20.4 20.99 20.09 20.99 19.77C21 19.44 20.89 19.13 20.67 18.89ZM2.52 8.84C2.52 7.59 2.89 6.37 3.58 5.33C4.28 4.29 5.26 3.48 6.42 3C7.57 2.52 8.84 2.4 10.07 2.64C11.29 2.89 12.42 3.49 13.3 4.37C14.18 5.25 14.79 6.38 15.03 7.6C15.27 8.83 15.15 10.1 14.67 11.25C14.19 12.41 13.38 13.39 12.34 14.09C11.3 14.78 10.08 15.15 8.83 15.15C7.16 15.15 5.56 14.48 4.37 13.3C3.19 12.11 2.52 10.51 2.52 8.84Z" fill="#FAFAFA" fill-opacity="1.000000" fill-rule="nonzero"/>
+        </svg>
+        </button>
+            <p id="searchResult"></p>
+            <button class="cart"> <a href="C:\Users\Olyly\Desktop\graduate work\shoppingcart\shopcart.html"><svg width="56.000000" height="56.000000" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <desc>
+                        Created with Pixso.
+                </desc>
+                <defs/>
+                <circle id="Ellipse 59" cx="28.000000" cy="28.000000" r="28.000000" fill="#274C5B" fill-opacity="1.000000"/>
+            </svg></a> 
+            &nbsp; Корзина
+            </button>
+        </div>
+
+    </div>
+
+    <div class="logo__catalog">
+        <h1>Каталог</h1>
+    </div>
+
+    <div class="shop">
+        <h1>Каталог товаров</h1>
+        <div class="product">
+            <div class="oil">
+                <button class="tag">Масло</button>
+                <img class="shop__product" src="imgcatalog/shop_oil.png" alt="">
+                <p>Масло кунжутное, 250мл</p>
+                <p class="price">109 руб</p>
+                <button onclick="addItemToCart('Масло кунжутное, 250мл', 109 + 'руб', 'imgcatalog/shop_oil.png')" class="p-button">Добавить в корзину</button>
+            </div>
+            <div class="oil">
+                <button class="tag">Масло</button>
+                <img class="shop__product" src="imgcatalog/shop_oil1.jpg" alt="">
+                <p>Масло тыквенное, 250мл</p>
+                <button onclick="addItemToCart('Масло тыквенное, 250мл', 209 + 'руб', 'imgcatalog/shop_oil.png')" class="p-button">Добавить в корзину</button>
+            </div>
+            <div class=" flour ">
+                <button class="tag ">Мука</button>
+                <img class="shop__product " src="imgcatalog/shop_flour.png " alt=" ">
+                <p>Мука Рисовая, 1кг</p>
+                <button onclick="addItemToCart('Масло тыквенное, 250мл', 209 + 'руб', 'imgcatalog/shop_flour.png')" class="p-button">Добавить в корзину</button>
+            </div>
+            <div class="flour">
+                <button class="tag">Мука</button>
+                <img class="shop__product" src="imgcatalog/shop_flour.png" alt="">
+                <p>Мука Рисовая, 1кг</p>
+                <button onclick="addItemToCart('Мука Рисовая, 1кг', 200 + 'руб', 'imgcatalog/shop_flour.png')" class="p-button">Добавить в корзину</button>
+            </div>
+            <div class=" porridge ">
+                <button class="tag ">Каша</button>
+                <img class="shop__product " src="imgcatalog/shop_po.jpg" alt=" ">
+                <p>Каша тыквенная, 500гр</p>
+                <button onclick="addItemToCart('Каша тыквенная, 500гр', 77 + 'руб', 'imgcatalog/shop_po.png')" class="p-button">Добавить в корзину</button>
+            </div>
+            <div class="porridge">
+                <button class="tag">Каша</button>
+                <img class="shop__product" src="imgcatalog/shop_po.jpg" alt="">
+                <p>Каша тыквенная, 1000гр</p>
+                <button onclick="addItemToCart('Каша тыквенная, 1000гр', 150 + 'руб', 'imgcatalog/shop_po.png')" class="p-button">Добавить в корзину</button>
+            </div>
+            <div class=" organic__products ">
+                <button class="tag ">Органика</button>
+                <img class="shop__product " src="imgcatalog/shop_org.png" alt=" ">
+                <p>Органические продукты</p>
+                <button onclick="addItemToCart('Помидоры 1 кг', 259 + 'руб', 'imgcatalog/shop_org.png')" class="p-button">Добавить в корзину</button>
+            </div>
+            <div class="organic__products">
+                <button class="tag">Органика</button>
+                <img class="shop__product" src="imgcatalog/shop_org.png" alt="">
+                <p>Органические продукты</p>
+                <button onclick="addItemToCart('Картофель и лук, 10 кг', 1200 + 'руб', 'imgcatalog/shop_org.png')" class="p-button">Добавить в корзину</button>
+            </div>
+            <div class=" porridge ">
+                <button class="tag ">Каша</button>
+                <img class="shop__product " src="imgcatalog/shop_po.jpg" alt=" ">
+                <p>Каша тыквенная, 500гр</p>
+                <button onclick="addItemToCart('Каша тыквенная, 500гр', 99 + 'руб', 'imgcatalog/shop_po.png')" class="p-button">Добавить в корзину</button>
+            </div>
+            <div class="porridge">
+                <button class="tag">Каша</button>
+                <img class="shop__product" src="imgcatalog/shop_po.jpg" alt="">
+                <p>Каша тыквенная, 1500гр</p>
+                <button onclick="addItemToCart('Каша тыквенная, 1500гр', 209 + 'руб', 'imgcatalog/shop_po.png')" class="p-button">Добавить в корзину</button>
+            </div>
+            <div class=" organic__products ">
+                <button class="tag ">Органика</button>
+                <img class="shop__product " src="imgcatalog/shop_org.png " alt=" ">
+                <p>Органические продукты</p>
+                <button onclick="addItemToCart('Огурцы и перец 1 кг', 333 + 'руб', 'imgcatalog/shop_org.png')" class="p-button">Добавить в корзину</button>
+            </div>
+            <div class="organic__products">
+                <button class="tag">Органика</button>
+                <img class="shop__product" src="imgcatalog/shop_org.png" alt="">
+                <p>Органические продукты</p>
+                <button onclick="addItemToCart('Кабачок 1 кг', 120 + 'руб', 'imgcatalog/shop_org.png')" class="p-button">Добавить в корзину</button>
+
+            </div>
+
+        </div>
+
+        <div class=" newslatteer ">
+            <h1>Узнайте первыми о новых акциях!</h1>
+            <form action="/subscribe " method="post ">
+                <!-- Это пример действия для отправки данных, можете заменить его на свое -->
+                <input type="email " id="email " name="email " placeholder="Введите ваш адрес email " required class="email-input ">
+                <button type="submit ">Подписаться</button>
+            </form>
+        </div>
+
+
+        <div class="footer ">
+            <div class="ContactUs ">
+                <h1>Contact Us</h1>
+                <p> <b>Email</b> <br> needhelp@Organia.com <br> <b>Phone</b> <br> 666 888 888 <br> <b>Address</b> <br> 88 road, borklyn street, USA</p>
+            </div>
+            <div class="SocialMedia ">
+                <img src="imgcatalog/header.png " alt=" ">
+                <p>Следите за новостями и акциями в наших социальных сетях, подпишитесь!</p>
+                <div class="reference ">
+                    <img src="imgcatalog/socmed1 (1).png " alt=" ">
+                    <img src="imgcatalog/socmed1 (2).png " alt=" ">
+                    <img src="imgcatalog/socmed1 (3).png " alt=" ">
+                    <img src="imgcatalog/socmed1 (4).png " alt=" ">
+                </div>
+            </div>
+            <div class="UtilityPages ">
+                <h1>Utility Pages</h1>
+                <p>Style Guide <br> 404 Not Found <br> Password Protected <br> Licences <br> Changelog
+                </p>
+            </div>
+        </div>
+
+
+</body>
+<script>
+    function addItemToCart(itemName, itemPrice, itemImage) {
+        const item = {
+            name: itemName,
+            price: itemPrice,
+            image: itemImage
+        };
+        const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+        cartItems.push(item);
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    }
+</script>
+
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="вёрстка, HTML, CSS, блог">
+    <meta name="description" content="Блог о процессе обучения веб-технологиям">
+    <title>Дипломный проект</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="headerlink">
+            <img src="img/header.png" alt="logo">
+            <a class="header__link" href="#">О нас</a>
+            <a class="header__link" href="catalog\catalog.html">КАТАЛОГ</a>
+            <a class="header__link" href="#">Новости</a>
+            <a class="header__link" href="#">Контакты</a>
+        </div>
+
+        <div class="headerbutton">
+            <input type="text" class="searchInput" placeholder="">
+            <button class="search__button" onclick="search()"> <svg width="21.000000" height="21.000000" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <desc>
+                    Created with Pixso.
+            </desc>
+            <defs/>
+            <path id="Vector" d="M20.67 18.89L15.91 14.13C17.06 12.6 17.68 10.74 17.68 8.84C17.68 3.96 13.71 0 8.83 0C3.96 0 0 3.96 0 8.84C0 13.71 3.96 17.68 8.83 17.68C10.74 17.68 12.6 17.06 14.13 15.91L18.89 20.67C19.13 20.89 19.44 21 19.77 20.99C20.09 20.99 20.4 20.85 20.62 20.62C20.85 20.4 20.99 20.09 20.99 19.77C21 19.44 20.89 19.13 20.67 18.89ZM2.52 8.84C2.52 7.59 2.89 6.37 3.58 5.33C4.28 4.29 5.26 3.48 6.42 3C7.57 2.52 8.84 2.4 10.07 2.64C11.29 2.89 12.42 3.49 13.3 4.37C14.18 5.25 14.79 6.38 15.03 7.6C15.27 8.83 15.15 10.1 14.67 11.25C14.19 12.41 13.38 13.39 12.34 14.09C11.3 14.78 10.08 15.15 8.83 15.15C7.16 15.15 5.56 14.48 4.37 13.3C3.19 12.11 2.52 10.51 2.52 8.84Z" fill="#FAFAFA" fill-opacity="1.000000" fill-rule="nonzero"/>
+        </svg>
+        </button>
+            <p id="searchResult"></p>
+
+            <button class="cart"> <a href="C:\Users\Olyly\Desktop\graduate work\shopping cart\shopcart.html"><svg width="56.000000" height="56.000000" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <desc>
+                    Created with Pixso.
+            </desc>
+            <defs/>
+            <circle id="Ellipse 59" cx="28.000000" cy="28.000000" r="28.000000" fill="#274C5B" fill-opacity="1.000000"/>
+        </svg></a> 
+        &nbsp; Корзина
+        </button>
+        </div>
+
+    </div>
+
+    <div class="banner">
+        <div class="content">
+            <h2>100% натурально</h2>
+            <h1>Масла и мука из фермерского сырья</h1>
+            <button class="bannerButton">В КАТАЛОГ &nbsp; <svg width="19.000000" height="19.000000" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <desc>
+                        Created with Pixso.
+                </desc>
+                <defs/>
+                <circle id="Ellipse" cx="9.500000" cy="9.500000" r="9.500000" fill="#335B6B" fill-opacity="1.000000"/>
+                <path id="Vector" d="M9.47 6.12L12.87 9.19L9.47 12.25M12.39 9.19L5.51 " stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.000000" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        </div>
+    </div>
+
+    <div class="offer">
+        <div class="offerOne">
+            <h1>Новинки!</h1>
+            <h2>Свежайшее штирийское масло</h2>
+
+        </div>
+        <div class="offerTwo">
+            <h1>Скидка!</h1>
+            <h2>Скидка 20% за подписку</h2>
+        </div>
+    </div>
+
+    <div class="data">
+        <h2>О нас</h2>
+        <h1>Мы работаем только с качественным сырьём от местных фермеров</h1>
+        <p>Работа с местными фермерами приносит производственным компаниям преимущество в виде высококачественного сырья, укрепляет местное сообщество, снижает экологический след и способствует устойчивости цепочки поставок, обеспечивая надежность и прозрачность.</p>
+
+        <h3>Только натуральная продукция</h3>
+        <div class="dataImg">
+            <img src="img/dataimg.svg" alt="">
+            <p>Полагаясь на природу, мы предлагаем продукты без искусственных добавок, гарантируя вам чистоту и качество.</p>
+        </div>
+
+        <h3>Высокие стандарты качества</h3>
+        <div class="dataImg">
+            <img src="img/dataimg1.png" alt="">
+            <p>На каждом этапе производства мы стремимся к совершенству, чтобы вы могли наслаждаться продуктами с превосходным качеством и вкусом.</p>
+        </div>
+
+        <button> <a href="#">Подробнее</a> &nbsp;&nbsp;<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10" cy="9.5" r="9.5" fill="#335B6B"/>
+            <path d="M9.97592 6.12891L13.3705 9.19342L9.97592 12.2579M12.899 9.19342H6.01562" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+             </button>
+    </div>
+
+    <div class="shop">
+        <h2>Категории</h2>
+        <h1>Наши продукты</h1>
+        <div class="product">
+            <div class="oil">
+                <button class="tag">Масло</button>
+                <img class="shop__product" src="img/shop_oil.png" alt="">
+                <p>Масло кунжутное, 250мл</p>
+            </div>
+            <div class="oil">
+                <button class="tag">Масло</button>
+                <img class="shop__product" src="img/shop_oil1.jpg" alt="">
+                <p>Масло тыквенное, 250мл</p>
+            </div>
+            <div class="flour">
+                <button class="tag">Мука</button>
+                <img class="shop__product" src="img/shop_flour.png" alt="">
+                <p>Мука Рисовая, 1кг</p>
+            </div>
+            <div class="flour">
+                <button class="tag">Мука</button>
+                <img class="shop__product" src="img/shop_flour.png" alt="">
+                <p>Мука Рисовая, 1кг</p>
+            </div>
+            <div class="porridge">
+                <button class="tag">Каша</button>
+                <img class="shop__product" src="img/shop_po.jpg" alt="">
+                <p>Каша тыквенная, 500гр</p>
+            </div>
+            <div class="porridge">
+                <button class="tag">Каша</button>
+                <img class="shop__product" src="img/shop_po.jpg" alt="">
+                <p>Каша тыквенная, 500гр</p>
+            </div>
+            <div class="organic__products">
+                <button class="tag">Органика</button>
+                <img class="shop__product" src="img/shop_org.png" alt="">
+                <p>Органические продукты</p>
+            </div>
+            <div class="organic__products">
+                <button class="tag">Органика</button>
+                <img class="shop__product" src="img/shop_org.png" alt="">
+                <p>Органические продукты</p>
+            </div>
+
+        </div>
+        <a href="#"><button class="watch"> Смотреть все </button></a>
+    </div>
+
+    <div class="reviews">
+        <h2>Отзывы</h2>
+        <h1>Что говорят наши покупатели?</h1>
+
+        <img src="img/comment__foto.png" alt=""><br>
+        <img src="img/comment__Star.svg" alt="">
+
+        <p>Горчичное масло просто удивительно! Оно обладает неповторимым ароматом, который сразу же погружает в атмосферу уюта и комфорта. Масло отлично смягчает кожу, придавая ей невероятную мягкость и увлажнение. К тому же, его приятный легкий цвет и текстура
+            делают его идеальным для ежедневного использования. Это действительно натуральное средство, которое превосходит мои ожидания. Я в восторге от горчичного масла и с уверенностью рекомендую его всем!</p>
+        <div class="line"></div>
+        <div class="bubble__cards">
+            <div class="bubble">
+                <h1>100%</h1>
+                <h2>Органически</h2>
+            </div>
+            <div class="bubble">
+                <h1>15</h1>
+                <h2>Продуктов на рынке</h2>
+            </div>
+            <div class="bubble">
+                <h1>150+</h1>
+                <h2>Торговых точек</h2>
+            </div>
+            <div class="bubble">
+                <h1>5+</h1>
+                <h2>Лет на рынке</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="offers__month">
+        <div class="brain">
+            <h1>Лучшие предложения месяца</h1>
+            <button class="bannerButton">Смотреть все</button>
+        </div>
+        <div class="product2">
+            <div class="oil2">
+                <button class="tag">Масло</button>
+                <img class="shop__product" src="img/shop_oil.png" alt="">
+                <p>Масло кунжутное, 250мл</p>
+            </div>
+            <div class="oil2">
+                <button class="tag">Масло</button>
+                <img class="shop__product" src="img/shop_oil1.jpg" alt="">
+                <p>Масло тыквенное, 250мл</p>
+            </div>
+            <div class="flour2">
+                <button class="tag">Мука</button>
+                <img class="shop__product" src="img/shop_flour.png" alt="">
+                <p>Мука Рисовая, 1кг</p>
+            </div>
+            <div class="flour2">
+                <button class="tag">Мука</button>
+                <img class="shop__product" src="img/shop_flour.png" alt="">
+                <p>Мука Рисовая, 1кг</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="competitive__advantage">
+        <div class="backimage">
+
+        </div>
+        <div class="information">
+            <h1>Eco Friendly</h1>
+            <h2>Создаём здоровое будущее </h2>
+            <h3>Современное сельское хозяйство</h3>
+            <p>Современное сельское хозяйство включает в себя использование передовых технологий, цифровизацию процессов и инновационные методы управления ресурсами. Оно направлено на повышение урожайности, улучшение качества продукции и снижение негативного
+                воздействия на окружающую среду.</p>
+            <h3>Технологичный подход в производстве</h3>
+            <p>Технологичный подход в производстве позволяет оптимизировать процессы, улучшить качество продукции и снизить воздействие на окружающую среду. Интеграция новейших технологий позволяет создавать инновационные продукты, отвечающие современным
+                потребностям рынка.</p>
+            <h3>Популяризация натуральных продуктов</h3>
+            <p>Популяризация натуральных продуктов способствует заботе о здоровье и благополучии. Она поддерживает устойчивое сельское хозяйство и защиту окружающей среды.</p>
+        </div>
+    </div>
+
+    <div class="newslatteer">
+        <h1>Узнайте первыми о новых акциях!</h1>
+        <form action="/subscribe" method="post">
+            <!-- Это пример действия для отправки данных, можете заменить его на свое -->
+            <input type="email" id="email" name="email" placeholder="Введите ваш адрес email" required class="email-input">
+            <button type="submit">Подписаться</button>
+        </form>
+    </div>
+
+
+    <div class="footer">
+        <div class="ContactUs">
+            <h1>Contact Us</h1>
+            <p> <b>Email</b> <br> needhelp@Organia.com <br> <b>Phone</b> <br> 666 888 888 <br> <b>Address</b> <br> 88 road, borklyn street, USA</p>
+        </div>
+        <div class="SocialMedia">
+            <img src="img/header.png" alt="">
+            <p>Следите за новостями и акциями в наших социальных сетях, подпишитесь!</p>
+            <div class="reference">
+                <img src="img/socmed1 (1).png" alt="">
+                <img src="img/socmed1 (2).png" alt="">
+                <img src="img/socmed1 (3).png" alt="">
+                <img src="img/socmed1 (4).png" alt="">
+            </div>
+        </div>
+        <div class="UtilityPages">
+            <h1>Utility Pages</h1>
+            <p>Style Guide <br> 404 Not Found <br> Password Protected <br> Licences <br> Changelog
+            </p>
+        </div>
+    </div>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
