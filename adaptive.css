@@ -1,57 +1,711 @@
 @charset "UTF-8";
 @font-face {
-    font-family: Rosa Marena;
-    src: url("rosa/rosamarena.ttf");
+  font-family: Rosa Marena;
+  src: url("rosa/rosamarena.ttf");
 }
-
 body {
-    width: 1920px;
-    margin: 0 auto;
+  width: 1920px;
+  margin: 0 auto;
 }
 
 .header {
-    padding-left: 162px;
-    padding-right: 162px;
-    padding-top: 69px;
-    padding-bottom: 69px;
-    background-color: rgba(255, 255, 255, 0.9);
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
+  padding-left: 162px;
+  padding-right: 162px;
+  padding-top: 69px;
+  padding-bottom: 69px;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
 }
 
 .headerlink {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .headerbutton {
-    display: flex;
-    flex-wrap: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .header__link {
-    padding-left: 32px;
+  padding-left: 32px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  color: #274c5b;
+  text-decoration: none;
+}
+
+.searchInput {
+  width: 200px;
+  height: 66px;
+  top: 0;
+  bottom: 0;
+  border-radius: 36px;
+  background: rgb(250, 250, 250);
+  border: none;
+}
+
+.search__button {
+  height: 66px;
+  width: 66px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 50%;
+  background-color: rgb(126, 182, 147);
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cart {
+  box-sizing: border-box;
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 33px;
+  width: 180px;
+  height: 66px;
+  color: rgb(39, 76, 91);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  padding-left: 260px;
+  width: 1920px;
+  height: 1000px;
+  background-image: url(img/banner.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -285px;
+}
+
+.content h2 {
+  padding-top: 247px;
+  color: rgb(104, 164, 127);
+  font-family: Rosa Marena;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 3%;
+  text-align: left;
+}
+
+.content h1 {
+  padding-right: 1119px;
+  color: rgb(39, 76, 91);
+  font-family: Roboto;
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 73px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.bannerButton {
+  width: 214px;
+  height: 79px;
+  border-radius: 16px;
+  background: rgb(239, 211, 114);
+  color: rgb(39, 76, 91);
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  border: none;
+}
+
+.offer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 150px;
+}
+
+.offerOne {
+  background-image: url(img/offer\ \(2\).jpeg);
+  border-radius: 5%;
+  height: 376px;
+  width: 650px;
+  background-position: -285px;
+}
+
+.offerTwo {
+  background-image: url(img/offer\ \(1\).jpeg);
+  border-radius: 5%;
+  height: 376px;
+  width: 650px;
+  background-position: -85px;
+}
+
+.offerOne h1 {
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 43px;
+  letter-spacing: 3%;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 78px;
+}
+
+.offerOne h2 {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 110%;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 277.63px;
+  padding-left: 30px;
+}
+
+.offerTwo h1 {
+  color: rgb(126, 182, 147);
+  font-family: Rosa Marena;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 51px;
+  letter-spacing: 3%;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 78px;
+}
+
+.offerTwo h2 {
+  color: rgb(39, 76, 91);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 47px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-left: 30px;
+  width: 277.63px;
+}
+
+.data {
+  width: 1920px;
+  height: 1100px;
+  background-image: url(img/data.png);
+  background-repeat: no-repeat;
+  padding-left: 960px;
+  padding-bottom: 150px;
+}
+
+.data h2 {
+  /* 1 */
+  color: rgb(126, 182, 147);
+  font-family: Rosa Marena;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 3%;
+  text-align: left;
+  padding-top: 100px;
+}
+
+.data h1 {
+  color: rgb(39, 76, 91);
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 59px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 702px;
+}
+
+.data p {
+  color: rgb(82, 92, 96);
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 165.4%;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 600px;
+}
+
+.data h3 {
+  color: rgb(39, 76, 91);
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.dataImg {
+  width: 500px;
+  display: flex;
+  gap: 20px;
+}
+
+.dataImg img {
+  width: 101px;
+  height: 101px;
+  background-color: white;
+  border-radius: 20%;
+}
+
+.data button {
+  margin-top: 25px;
+  width: 220px;
+  height: 79px;
+  border-radius: 16px;
+  background: rgb(39, 76, 91);
+}
+
+.data a {
+  color: rgb(255, 255, 255);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-decoration: none;
+}
+
+.shop {
+  text-align: center;
+  padding-bottom: 216px;
+}
+
+.shop h2 {
+  /* 1 */
+  color: rgb(126, 182, 147);
+  font-family: Rosa Marena;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 3%;
+}
+
+.shop h1 {
+  color: rgb(39, 76, 91);
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 59px;
+  letter-spacing: 0%;
+}
+
+.product {
+  padding-top: 40px;
+  padding-bottom: 123px;
+  display: grid;
+  grid-template-columns: 340px 340px 340px 340px;
+  grid-template-rows: 483px 483px;
+  justify-content: center;
+  gap: 17px;
+}
+
+.oil,
+.flour,
+.porridge,
+.organic__products {
+  border-radius: 30px;
+  background-color: rgb(249, 248, 248);
+}
+
+.shop__product {
+  padding-top: 10px;
+  width: 292px;
+  height: 361px;
+  justify-content: center;
+}
+
+.watch {
+  width: 255px;
+  height: 79px;
+  border-radius: 16px;
+  background: rgb(39, 76, 91);
+  color: rgb(255, 255, 255);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0%;
+}
+
+.tag {
+  margin-top: 30px;
+  width: 77px;
+  height: 31px;
+  border-radius: 8px;
+  background: rgb(39, 76, 91);
+  color: rgb(255, 255, 255);
+  font-family: Open Sans;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.shop p {
+  color: rgb(39, 76, 91);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.reviews {
+  width: 1920px;
+  height: 1267px;
+  background-image: url(img/comment\ \(2\).png);
+  text-align: center;
+}
+
+.reviews h2 {
+  padding-top: 162px;
+  color: rgb(126, 182, 147);
+  font-family: Rosa Marena;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 55px;
+  letter-spacing: 3%;
+}
+
+.reviews h1 {
+  color: rgb(39, 76, 91);
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 59px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.reviews p {
+  padding-left: 570px;
+  width: 780px;
+  color: rgb(82, 92, 96);
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 165.4%;
+  letter-spacing: 0%;
+}
+
+.line {
+  margin-top: 101px;
+  margin-left: 400px;
+  border-top: 1px solid rgb(224, 224, 224);
+  width: 1108px;
+}
+
+.bubble__cards {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 221px 221px 221px 221px;
+  grid-template-rows: 221px;
+  gap: 40px;
+  justify-content: center;
+}
+
+.bubble {
+  margin-left: 15px;
+  justify-content: center;
+  background-color: rgb(241, 241, 241);
+  border-radius: 50%;
+  width: 189px;
+  border: 5px solid rgb(126, 182, 147);
+  height: 189px;
+}
+
+.bubble h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: rgb(39, 76, 91);
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 59px;
+  text-align: center;
+}
+
+.bubble h2 {
+  margin: 0;
+  padding-top: 0;
+  color: rgb(39, 76, 91);
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0%;
+  text-align: center;
+  line-height: 30px;
+}
+
+.offers__month {
+  width: 1920px;
+  height: 1050px;
+  background-color: rgb(126, 182, 147);
+  justify-content: center;
+  padding-top: 256px;
+}
+
+.brain {
+  padding-left: 10px;
+  padding-right: 15px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.offers__month h1 {
+  color: rgb(255, 255, 255);
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 59px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 742px;
+}
+
+.product2 {
+  padding-top: 40px;
+  padding-bottom: 123px;
+  display: grid;
+  grid-template-columns: 340px 340px 340px 340px;
+  grid-template-rows: 483px;
+  justify-content: center;
+  gap: 17px;
+}
+
+.product2 p {
+  color: rgb(39, 76, 91);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.oil2,
+.flour2 {
+  border-radius: 30px;
+  background-color: rgb(249, 248, 248);
+}
+
+.competitive__advantage {
+  width: 1920px;
+  height: 935px;
+  display: flex;
+  background-image: url(img/backImage1.png);
+  background-repeat: no-repeat;
+}
+
+.backimage {
+  width: 993.05px;
+  height: 931px;
+}
+
+.information {
+  padding-top: 150px;
+  padding-right: 260px;
+  width: 789px;
+  height: 723px;
+}
+
+.information h1 {
+  color: rgb(126, 182, 147);
+  font-family: Rosa Marena;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 51px;
+  letter-spacing: 9%;
+}
+
+.information h2 {
+  color: rgb(39, 76, 91);
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 30px;
+  letter-spacing: 0%;
+}
+
+.information h3 {
+  color: rgb(39, 76, 91);
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0%;
+}
+
+.information p {
+  color: rgb(82, 92, 96);
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.newslatteer {
+  width: 1400px;
+  height: 323px;
+  background-image: url(img/newslatteer.png);
+  margin-top: 202px;
+  margin-left: 246px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.newslatteer h1 {
+  color: rgb(255, 255, 255);
+  font-family: Roboto;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 59px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 464px;
+}
+
+.newslatteer button {
+  margin-top: 25px;
+  width: 220px;
+  height: 79px;
+  border-radius: 16px;
+  background: rgb(126, 182, 147);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.email-input {
+  width: 349px;
+  height: 80px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  background-color: white;
+  color: rgb(171, 171, 171);
+  font-family: Roboto;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.footer {
+  padding-top: 100px;
+  display: flex;
+  gap: 130px;
+  justify-content: center;
+}
+
+.ContactUs p {
+  color: rgb(82, 92, 96);
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 200%;
+  letter-spacing: 0%;
+  text-align: right;
+}
+
+.SocialMedia {
+  justify-content: center;
+  text-align: center;
+}
+
+.SocialMedia p {
+  width: 543px;
+  color: rgb(82, 92, 96);
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 200%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.UtilityPages p {
+  color: rgb(82, 92, 96);
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 272.9%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+@media (max-width: 1024px) {
+  body {
+    margin: 0;
+  }
+  .header {
+    padding-left: 42px;
+    padding-right: 20px;
+    padding-top: 49px;
+    padding-bottom: 49px;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  .headerlink {
+    display: flex;
+    align-items: center;
+  }
+  .headerbutton {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .header__link {
+    padding-left: 22px;
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 20px;
     color: #274c5b;
     text-decoration: none;
-}
-
-.searchInput {
-    width: 200px;
-    height: 66px;
+  }
+  .searchInput {
+    width: 170px;
+    height: 60px;
     top: 0;
     bottom: 0;
     border-radius: 36px;
     background: rgb(250, 250, 250);
     border: none;
-}
-
-.search__button {
-    height: 66px;
-    width: 66px;
+  }
+  .search__button {
+    height: 60px;
+    width: 60px;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 50%;
@@ -60,9 +714,8 @@ body {
     border: none;
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.cart {
+  }
+  .cart {
     box-sizing: border-box;
     border: 1px solid rgb(224, 224, 224);
     border-radius: 33px;
@@ -76,45 +729,36 @@ body {
     text-align: left;
     display: flex;
     align-items: center;
-}
-
-.content {
-    padding-left: 260px;
-    width: 1920px;
+  }
+  .content {
+    padding-left: 60px;
+    width: 100vw;
     height: 1000px;
     background-image: url(img/banner.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: -285px;
-}
-
-.content h2 {
-    padding-top: 247px;
+  }
+  .content h2 {
+    padding-top: 147px;
     color: rgb(104, 164, 127);
     font-family: Rosa Marena;
-    font-size: 48px;
+    font-size: 38px;
     font-weight: 500;
     line-height: 34px;
     letter-spacing: 3%;
     text-align: left;
-}
-
-.content h1 {
-    padding-right: 1119px;
+  }
+  .content h1 {
+    padding-right: 0;
     color: rgb(39, 76, 91);
     font-family: Roboto;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 800;
     line-height: 73px;
     letter-spacing: 0%;
     text-align: left;
-}
-
-.content a {
-    text-decoration: none;
-}
-
-.bannerButton {
+  }
+  .bannerButton {
     width: 214px;
     height: 79px;
     border-radius: 16px;
@@ -132,108 +776,94 @@ body {
     align-items: center;
     padding: 0px;
     border: none;
-}
-
-.offer {
+  }
+  .offer {
     display: flex;
     justify-content: space-evenly;
-    padding: 150px;
-}
-
-.offerOne {
+    padding: 50px;
+  }
+  .offerOne {
     background-image: url(img/offer\ \(2\).jpeg);
     border-radius: 5%;
     height: 376px;
-    width: 650px;
-    background-position: -285px;
-}
-
-.offerTwo {
+    max-width: 500px;
+  }
+  .offerTwo {
     background-image: url(img/offer\ \(1\).jpeg);
     border-radius: 5%;
     height: 376px;
-    width: 650px;
-    background-position: -85px;
-}
-
-.offerOne h1 {
+    max-width: 500px;
+  }
+  .offerOne h1 {
     color: rgb(255, 255, 255);
-    font-size: 48px;
+    font-size: 38px;
     font-weight: 500;
     line-height: 43px;
     letter-spacing: 3%;
     text-align: left;
     padding-left: 30px;
-    padding-top: 78px;
-}
-
-.offerOne h2 {
+    padding-top: 58px;
+  }
+  .offerOne h2 {
     color: rgb(255, 255, 255);
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 800;
     line-height: 110%;
     letter-spacing: 0%;
     text-align: left;
     width: 277.63px;
     padding-left: 30px;
-}
-
-.offerTwo h1 {
+  }
+  .offerTwo h1 {
     color: rgb(126, 182, 147);
     font-family: Rosa Marena;
-    font-size: 48px;
+    font-size: 38px;
     font-weight: 500;
     line-height: 51px;
     letter-spacing: 3%;
     text-align: left;
     padding-left: 30px;
     padding-top: 78px;
-}
-
-.offerTwo h2 {
+  }
+  .offerTwo h2 {
     color: rgb(39, 76, 91);
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 800;
     line-height: 47px;
     letter-spacing: 0%;
     text-align: left;
     padding-left: 30px;
     width: 277.63px;
-}
-
-.data {
-    width: 1920px;
-    height: 1100px;
+  }
+  .data {
+    width: 100vw;
+    max-height: 1100px;
     background-image: url(img/data.png);
     background-repeat: no-repeat;
-    padding-left: 960px;
     padding-bottom: 150px;
-}
-
-.data h2 {
+  }
+  .data h2 {
     /* 1 */
     color: rgb(126, 182, 147);
     font-family: Rosa Marena;
-    font-size: 48px;
+    font-size: 38px;
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 3%;
     text-align: left;
     padding-top: 100px;
-}
-
-.data h1 {
+  }
+  .data h1 {
     color: rgb(39, 76, 91);
     font-family: Roboto;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 800;
     line-height: 59px;
     letter-spacing: 0%;
     text-align: left;
-    width: 702px;
-}
-
-.data p {
+    max-width: 702px;
+  }
+  .data p {
     color: rgb(82, 92, 96);
     font-family: Open Sans;
     font-size: 18px;
@@ -241,10 +871,9 @@ body {
     line-height: 165.4%;
     letter-spacing: 0%;
     text-align: left;
-    width: 600px;
-}
-
-.data h3 {
+    max-width: 500px;
+  }
+  .data h3 {
     color: rgb(39, 76, 91);
     font-family: Roboto;
     font-size: 25px;
@@ -252,30 +881,26 @@ body {
     line-height: 29px;
     letter-spacing: 0%;
     text-align: left;
-}
-
-.dataImg {
-    width: 500px;
+  }
+  .dataImg {
+    max-width: 500px;
     display: flex;
     gap: 20px;
-}
-
-.dataImg img {
+  }
+  .dataImg img {
     width: 101px;
     height: 101px;
     background-color: white;
     border-radius: 20%;
-}
-
-.data button {
+  }
+  .data button {
     margin-top: 25px;
     width: 220px;
     height: 79px;
     border-radius: 16px;
     background: rgb(39, 76, 91);
-}
-
-.data a {
+  }
+  .data a {
     color: rgb(255, 255, 255);
     font-family: Roboto;
     font-size: 20px;
@@ -283,14 +908,12 @@ body {
     line-height: 23px;
     letter-spacing: 0%;
     text-decoration: none;
-}
-
-.shop {
+  }
+  .shop {
     text-align: center;
     padding-bottom: 216px;
-}
-
-.shop h2 {
+  }
+  .shop h2 {
     /* 1 */
     color: rgb(126, 182, 147);
     font-family: Rosa Marena;
@@ -298,18 +921,16 @@ body {
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 3%;
-}
-
-.shop h1 {
+  }
+  .shop h1 {
     color: rgb(39, 76, 91);
     font-family: Roboto;
     font-size: 50px;
     font-weight: 800;
     line-height: 59px;
     letter-spacing: 0%;
-}
-
-.product {
+  }
+  .product {
     padding-top: 40px;
     padding-bottom: 123px;
     display: grid;
@@ -317,24 +938,21 @@ body {
     grid-template-rows: 483px 483px;
     justify-content: center;
     gap: 17px;
-}
-
-.oil,
+  }
+  .oil,
 .flour,
 .porridge,
 .organic__products {
     border-radius: 30px;
     background-color: rgb(249, 248, 248);
-}
-
-.shop__product {
+  }
+  .shop__product {
     padding-top: 10px;
     width: 292px;
     height: 361px;
     justify-content: center;
-}
-
-.watch {
+  }
+  .watch {
     width: 255px;
     height: 79px;
     border-radius: 16px;
@@ -345,9 +963,8 @@ body {
     font-weight: 700;
     line-height: 23px;
     letter-spacing: 0%;
-}
-
-.tag {
+  }
+  .tag {
     margin-top: 30px;
     width: 77px;
     height: 31px;
@@ -360,9 +977,8 @@ body {
     line-height: 20px;
     letter-spacing: 0%;
     text-align: center;
-}
-
-.shop p {
+  }
+  .shop p {
     color: rgb(39, 76, 91);
     font-family: Roboto;
     font-size: 20px;
@@ -370,16 +986,14 @@ body {
     line-height: 23px;
     letter-spacing: 0%;
     text-align: center;
-}
-
-.reviews {
+  }
+  .reviews {
     width: 1920px;
     height: 1267px;
     background-image: url(img/comment\ \(2\).png);
     text-align: center;
-}
-
-.reviews h2 {
+  }
+  .reviews h2 {
     padding-top: 162px;
     color: rgb(126, 182, 147);
     font-family: Rosa Marena;
@@ -387,9 +1001,8 @@ body {
     font-weight: 500;
     line-height: 55px;
     letter-spacing: 3%;
-}
-
-.reviews h1 {
+  }
+  .reviews h1 {
     color: rgb(39, 76, 91);
     font-family: Roboto;
     font-size: 50px;
@@ -397,9 +1010,8 @@ body {
     line-height: 59px;
     letter-spacing: 0%;
     text-align: center;
-}
-
-.reviews p {
+  }
+  .reviews p {
     padding-left: 570px;
     width: 780px;
     color: rgb(82, 92, 96);
@@ -408,25 +1020,22 @@ body {
     font-weight: 400;
     line-height: 165.4%;
     letter-spacing: 0%;
-}
-
-.line {
+  }
+  .line {
     margin-top: 101px;
     margin-left: 400px;
     border-top: 1px solid rgb(224, 224, 224);
     width: 1108px;
-}
-
-.bubble__cards {
+  }
+  .bubble__cards {
     margin-top: 100px;
     display: grid;
     grid-template-columns: 221px 221px 221px 221px;
     grid-template-rows: 221px;
     gap: 40px;
     justify-content: center;
-}
-
-.bubble {
+  }
+  .bubble {
     margin-left: 15px;
     justify-content: center;
     background-color: rgb(241, 241, 241);
@@ -434,9 +1043,8 @@ body {
     width: 189px;
     border: 5px solid rgb(126, 182, 147);
     height: 189px;
-}
-
-.bubble h1 {
+  }
+  .bubble h1 {
     margin-bottom: 0;
     padding-bottom: 0;
     color: rgb(39, 76, 91);
@@ -445,9 +1053,8 @@ body {
     font-weight: 800;
     line-height: 59px;
     text-align: center;
-}
-
-.bubble h2 {
+  }
+  .bubble h2 {
     margin: 0;
     padding-top: 0;
     color: rgb(39, 76, 91);
@@ -457,17 +1064,15 @@ body {
     letter-spacing: 0%;
     text-align: center;
     line-height: 30px;
-}
-
-.offers__month {
+  }
+  .offers__month {
     width: 1920px;
     height: 1050px;
     background-color: rgb(126, 182, 147);
     justify-content: center;
     padding-top: 256px;
-}
-
-.brain {
+  }
+  .brain {
     padding-left: 10px;
     padding-right: 15px;
     display: flex;
@@ -475,9 +1080,8 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-}
-
-.offers__month h1 {
+  }
+  .offers__month h1 {
     color: rgb(255, 255, 255);
     font-family: Roboto;
     font-size: 50px;
@@ -486,9 +1090,8 @@ body {
     letter-spacing: 0%;
     text-align: left;
     width: 742px;
-}
-
-.product2 {
+  }
+  .product2 {
     padding-top: 40px;
     padding-bottom: 123px;
     display: grid;
@@ -496,9 +1099,8 @@ body {
     grid-template-rows: 483px;
     justify-content: center;
     gap: 17px;
-}
-
-.product2 p {
+  }
+  .product2 p {
     color: rgb(39, 76, 91);
     font-family: Roboto;
     font-size: 20px;
@@ -506,70 +1108,61 @@ body {
     line-height: 23px;
     letter-spacing: 0%;
     text-align: center;
-}
-
-.oil2,
+  }
+  .oil2,
 .flour2 {
     border-radius: 30px;
     background-color: rgb(249, 248, 248);
-}
-
-.competitive__advantage {
+  }
+  .competitive__advantage {
     width: 1920px;
     height: 935px;
     display: flex;
     background-image: url(img/backImage1.png);
     background-repeat: no-repeat;
-}
-
-.backimage {
+  }
+  .backimage {
     width: 993.05px;
     height: 931px;
-}
-
-.information {
+  }
+  .information {
     padding-top: 150px;
     padding-right: 260px;
     width: 789px;
     height: 723px;
-}
-
-.information h1 {
+  }
+  .information h1 {
     color: rgb(126, 182, 147);
     font-family: Rosa Marena;
     font-size: 48px;
     font-weight: 500;
     line-height: 51px;
     letter-spacing: 9%;
-}
-
-.information h2 {
+  }
+  .information h2 {
     color: rgb(39, 76, 91);
     font-family: Roboto;
     font-size: 50px;
     font-weight: 800;
     line-height: 30px;
     letter-spacing: 0%;
-}
-
-.information h3 {
+  }
+  .information h3 {
     color: rgb(39, 76, 91);
     font-family: Roboto;
     font-size: 25px;
     font-weight: 500;
     letter-spacing: 0%;
-}
-
-.information p {
+  }
+  .information p {
     color: rgb(82, 92, 96);
     font-family: Open Sans;
     font-size: 18px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0%;
-}
-
-.newslatteer {
+  }
+  .newslatteer {
     width: 1400px;
     height: 323px;
     background-image: url(img/newslatteer.png);
@@ -580,9 +1173,8 @@ body {
     justify-content: space-around;
     flex-wrap: nowrap;
     align-items: center;
-}
-
-.newslatteer h1 {
+  }
+  .newslatteer h1 {
     color: rgb(255, 255, 255);
     font-family: Roboto;
     font-size: 50px;
@@ -591,9 +1183,8 @@ body {
     letter-spacing: 0%;
     text-align: left;
     width: 464px;
-}
-
-.newslatteer button {
+  }
+  .newslatteer button {
     margin-top: 25px;
     width: 220px;
     height: 79px;
@@ -607,9 +1198,8 @@ body {
     line-height: 23px;
     letter-spacing: 0%;
     text-align: center;
-}
-
-.email-input {
+  }
+  .email-input {
     width: 349px;
     height: 80px;
     border: 1px solid #ccc;
@@ -623,31 +1213,27 @@ body {
     line-height: 21px;
     letter-spacing: 0%;
     text-align: center;
-}
-
-.footer {
+  }
+  .footer {
     padding-top: 100px;
     display: flex;
     gap: 130px;
     justify-content: center;
-}
-
-.ContactUs {
+  }
+  .ContactUs p {
     color: rgb(82, 92, 96);
     font-family: Open Sans;
     font-size: 18px;
-    font-weight: 400;
-    line-height: 200.9%;
+    font-weight: 300;
+    line-height: 200%;
     letter-spacing: 0%;
     text-align: right;
-}
-
-.SocialMedia {
+  }
+  .SocialMedia {
     justify-content: center;
     text-align: center;
-}
-
-.SocialMedia p {
+  }
+  .SocialMedia p {
     width: 543px;
     color: rgb(82, 92, 96);
     font-family: Open Sans;
@@ -656,9 +1242,8 @@ body {
     line-height: 200%;
     letter-spacing: 0%;
     text-align: center;
-}
-
-.UtilityPages p {
+  }
+  .UtilityPages p {
     color: rgb(82, 92, 96);
     font-family: Open Sans;
     font-size: 18px;
@@ -666,471 +1251,441 @@ body {
     line-height: 272.9%;
     letter-spacing: 0%;
     text-align: left;
+  }
 }
-
 @media (max-width: 768px) {
-    body {
-        width: 100%;
-        margin: 0 auto;
-        margin-right: 10%;
-        align-items: center;
-    }
-    .header {
-        padding: 20px;
-        /* Уменьшаем внутренние отступы */
-        background-color: rgba(255, 255, 255, 0.9);
-        display: flex;
-        flex-direction: column;
-        /* Меняем направление flex контейнера на столбец */
-        align-items: center;
-        /* Выравниваем по центру */
-        gap: 20px;
-        /* Уменьшаем промежуток между элементами */
-    }
-    .headerlink {
-        display: flex;
-        flex-direction: column;
-        /* Меняем направление flex контейнера на столбец */
-        align-items: center;
-        /* Выравниваем по центру */
-    }
-    .headerbutton {
-        display: flex;
-        flex-wrap: wrap;
-        /* Разрешаем перенос элементов на новую строку */
-        justify-content: center;
-        /* Выравниваем по центру */
-    }
-    .header__link {
-        padding: 10px;
-        /* Уменьшаем отступы */
-        font-family: var(--font-family);
-        font-weight: 700;
-        font-size: 16px;
-        /* Уменьшаем размер шрифта */
-        color: #274c5b;
-        text-decoration: none;
-        text-align: center;
-        /* Выравниваем по центру */
-    }
-    .searchInput {
-        width: 100%;
-        /* Ширина занимает всю доступную ширину */
-        max-width: 300px;
-        /* Максимальная ширина */
-        height: 50px;
-        /* Уменьшаем высоту */
-        border-radius: 25px;
-        /* Уменьшаем радиус скругления углов */
-        background: rgb(250, 250, 250);
-        border: none;
-        margin-bottom: 10px;
-        /* Добавляем немного отступа снизу */
-    }
-    .search__button {
-        width: 50px;
-        /* Уменьшаем размер кнопки */
-        height: 50px;
-        padding: 10px;
-        font-size: 14px;
-        /* Уменьшаем размер шрифта */
-    }
-    .cart {
-        width: 100%;
-        /* Ширина занимает всю доступную ширину */
-        max-width: 200px;
-        /* Максимальная ширина */
-        height: 50px;
-        /* Уменьшаем высоту */
-        border-radius: 25px;
-        /* Уменьшаем радиус скругления углов */
-        padding: 10px;
-        font-size: 14px;
-        /* Уменьшаем размер шрифта */
-        text-align: center;
-        /* Выравниваем по центру */
-        align-items: center;
-        justify-content: center;
-    }
-    .content {
-        padding-left: 15px;
-        width: 100%;
-        height: 100%;
-        background-image: url(img/banner.svg);
-        background-size: 150%;
-        background-repeat: no-repeat;
-        background-position: -10em;
-    }
-    .content h2 {
-        padding-top: 47px;
-        color: rgb(104, 164, 127);
-        font-family: Rosa Marena;
-        font-size: 28px;
-        font-weight: 500;
-        line-height: 34px;
-        letter-spacing: 3%;
-        text-align: left;
-    }
-    .content h1 {
-        color: rgb(39, 76, 91);
-        font-family: Roboto;
-        font-size: 25px;
-        font-weight: 700;
-        line-height: 33px;
-        letter-spacing: 0%;
-        text-align: left;
-    }
-    .bannerButton {
-        width: 200px;
-        height: 75px;
-        border-radius: 16px;
-        background: rgb(239, 211, 114);
-        color: rgb(39, 76, 91);
-        font-family: "Roboto";
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 23px;
-        letter-spacing: 0%;
-        text-align: left;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 0px;
-        border: none;
-    }
-    .offer {
-        display: flex;
-        flex-direction: column;
-        padding: 15px;
-    }
-    .offerOne {
-        background-image: url(img/offer\ \(2\).jpeg);
-        border-radius: 5%;
-        height: 90%;
-        width: 100%;
-        background-position: -285px;
-    }
-    .offerTwo {
-        background-image: url(img/offer\ \(1\).jpeg);
-        border-radius: 5%;
-        height: 90%;
-        width: 100%;
-        background-position: -85px;
-    }
-    .offerOne h1 {
-        color: rgb(255, 255, 255);
-        font-size: 28px;
-        font-weight: 500;
-        line-height: 43px;
-        letter-spacing: 3%;
-        text-align: left;
-        padding-left: 30px;
-        padding-top: 48px;
-    }
-    .offerOne h2 {
-        color: rgb(255, 255, 255);
-        font-size: 30px;
-        font-weight: 800;
-        line-height: 110%;
-        letter-spacing: 0%;
-        text-align: left;
-        width: 277.63px;
-        padding-left: 30px;
-    }
-    .offerTwo h1 {
-        color: rgb(126, 182, 147);
-        font-family: Rosa Marena;
-        font-size: 38px;
-        font-weight: 500;
-        line-height: 51px;
-        letter-spacing: 3%;
-        text-align: left;
-        padding-left: 30px;
-        padding-top: 48px;
-    }
-    .offerTwo h2 {
-        color: rgb(39, 76, 91);
-        font-size: 30px;
-        font-weight: 800;
-        line-height: 47px;
-        letter-spacing: 0%;
-        text-align: left;
-        padding-left: 30px;
-        width: 277.63px;
-    }
-    .data {
-        display: none;
-    }
-    .shop {
-        text-align: center;
-        padding-bottom: 36px;
-    }
-    .shop h2 {
-        /* 1 */
-        color: rgb(126, 182, 147);
-        font-family: Rosa Marena;
-        font-size: 48px;
-        font-weight: 500;
-        line-height: 20px;
-        letter-spacing: 3%;
-    }
-    .shop h1 {
-        color: rgb(39, 76, 91);
-        font-family: Roboto;
-        font-size: 30px;
-        font-weight: 800;
-        line-height: 59px;
-        letter-spacing: 0%;
-    }
-    .product {
-        padding-top: 20px;
-        padding-bottom: 33px;
-        display: grid;
-        grid-template-columns: 300px;
-        grid-template-rows: 350px;
-        justify-content: center;
-        gap: 17px;
-    }
-    .oil,
-    .flour,
-    .porridge,
-    .organic__products {
-        border-radius: 30px;
-        background-color: rgb(249, 248, 248);
-    }
-    .shop__product {
-        padding-top: 10px;
-        width: 240px;
-        height: 290px;
-        justify-content: center;
-    }
-    .watch {
-        width: 255px;
-        height: 79px;
-        border-radius: 16px;
-        background: rgb(39, 76, 91);
-        color: rgb(255, 255, 255);
-        font-family: Roboto;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 23px;
-        letter-spacing: 0%;
-    }
-    .tag {
-        margin-top: 30px;
-        width: 77px;
-        height: 31px;
-        border-radius: 8px;
-        background: rgb(39, 76, 91);
-        color: rgb(255, 255, 255);
-        font-family: Open Sans;
-        font-size: 15px;
-        font-weight: 600;
-        line-height: 20px;
-        letter-spacing: 0%;
-        text-align: center;
-    }
-    .shop p {
-        color: rgb(39, 76, 91);
-        font-family: Roboto;
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 23px;
-        letter-spacing: 0%;
-        text-align: center;
-    }
-    .reviews {
-        width: 100%;
-        height: 100%;
-        margin-left: 10%;
-        background: rgb(255, 255, 255);
-        text-align: center;
-    }
-    .reviews h2 {
-        align-items: center;
-        padding-left: 10%;
-        padding-right: 10%;
-        padding-top: 62px;
-        color: rgb(126, 182, 147);
-        font-family: Rosa Marena;
-        font-size: 28px;
-        font-weight: 500;
-        line-height: 55px;
-        letter-spacing: 3%;
-    }
-    .reviews h1 {
-        align-items: center;
-        padding-left: 10%;
-        padding-right: 10%;
-        color: rgb(39, 76, 91);
-        font-family: Roboto;
-        font-size: 30px;
-        font-weight: 800;
-        line-height: 59px;
-        letter-spacing: 0%;
-        text-align: center;
-    }
-    .reviews p {
-        align-items: center;
-        padding-left: 10%;
-        padding-right: 5%;
-        width: 350px;
-        color: rgb(82, 92, 96);
-        font-family: Open Sans;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 165.4%;
-        letter-spacing: 0%;
-    }
-    .line {
-        margin-top: 101px;
-        margin-left: 400px;
-        border-top: 1px solid rgb(224, 224, 224);
-        width: 1108px;
-    }
-    .bubble__cards {
-        display: none;
-    }
-    .offers__month {
-        display: none;
-    }
-    .competitive__advantage {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        background-image: url(img/backImage1.png);
-        background-repeat: no-repeat;
-    }
-    .backimage {
-        width: 110%;
-        height: 110%;
-        justify-content: center;
-    }
-    .information {
-        padding-top: 30px;
-        padding-right: 30px;
-        width: 100%;
-        height: 100%;
-    }
-    .information h1 {
-        color: rgb(126, 182, 147);
-        font-family: Rosa Marena;
-        font-size: 38px;
-        font-weight: 500;
-        line-height: 51px;
-        letter-spacing: 9%;
-    }
-    .information h2 {
-        color: rgb(39, 76, 91);
-        font-family: Roboto;
-        font-size: 30px;
-        font-weight: 800;
-        line-height: 30px;
-        letter-spacing: 0%;
-    }
-    .information h3 {
-        display: none;
-    }
-    .information p {
-        display: none;
-    }
-    .newslatteer {
-        width: 100%;
-        height: 120%;
-        background-image: url(img/newslatteer.png);
-        margin-top: 25px;
-        margin-left: 26px;
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
-    }
-    .newslatteer h1 {
-        color: rgb(255, 255, 255);
-        font-family: Roboto;
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 39px;
-        letter-spacing: 0%;
-        text-align: center;
-        width: 464px;
-    }
-    .newslatteer button {
-        margin-top: 25px;
-        margin-left: 20%;
-        width: 220px;
-        height: 79px;
-        border-radius: 16px;
-        background: rgb(126, 182, 147);
-        border: none;
-        color: rgb(255, 255, 255);
-        font-family: Roboto;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 23px;
-        letter-spacing: 0%;
-        text-align: center;
-    }
-    .email-input {
-        margin-left: 20%;
-        width: 220px;
-        height: 80px;
-        border: 1px solid #ccc;
-        border-radius: 16px;
-        background-color: white;
-        color: rgb(171, 171, 171);
-        font-family: Roboto;
-        font-style: italic;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 21px;
-        letter-spacing: 0%;
-        text-align: center;
-    }
-    .footer {
-        padding-top: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        justify-content: center;
-    }
-    .ContactUs {
-        color: rgb(82, 92, 96);
-        font-family: Open Sans;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 200.9%;
-        letter-spacing: 0%;
-        text-align: center;
-    }
-    .SocialMedia {
-        justify-content: center;
-        text-align: center;
-    }
-    .SocialMedia p {
-        width: 300px;
-        color: rgb(82, 92, 96);
-        font-family: Open Sans;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 200%;
-        letter-spacing: 0%;
-        text-align: center;
-    }
-    .UtilityPages p {
-        color: rgb(82, 92, 96);
-        font-family: Open Sans;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 272.9%;
-        letter-spacing: 0%;
-        text-align: left;
-    }
-}
-
-
-/*# sourceMappingURL=adaptive.css.map */
+  body {
+    width: 100%;
+    margin: 0 auto;
+    margin-right: 10%;
+    align-items: center;
+  }
+  .header {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .headerlink {
+    display: flex;
+    flex-direction: column;
+    /* Меняем направление flex контейнера на столбец */
+    align-items: center;
+  }
+  .headerbutton {
+    display: flex;
+    flex-wrap: wrap;
+    /* Разрешаем перенос элементов на новую строку */
+    justify-content: center;
+  }
+  .header__link {
+    padding: 10px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    color: #274c5b;
+    text-decoration: none;
+    text-align: center;
+  }
+  .searchInput {
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    background: rgb(250, 250, 250);
+    border: none;
+    margin-bottom: 10px;
+  }
+  .search__button {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .cart {
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .content {
+    padding-left: 15px;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/banner.svg);
+    background-size: 100vw;
+    background-repeat: repeat;
+  }
+  .content a {
+    text-decoration: none;
+  }
+  .content h2 {
+    padding-top: 47px;
+    color: rgb(104, 164, 127);
+    font-family: Rosa Marena;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 3%;
+    text-align: left;
+  }
+  .content h1 {
+    color: rgb(39, 76, 91);
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .bannerButton {
+    width: 200px;
+    height: 75px;
+    border-radius: 16px;
+    background: rgb(239, 211, 114);
+    color: rgb(39, 76, 91);
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border: none;
+  }
+  .offer {
+    padding: 0;
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .offerOne {
+    background-image: url(img/offer\ \(2\).jpeg);
+    height: 90%;
+    width: 100%;
+  }
+  .offerTwo {
+    background-image: url(img/offer\ \(1\).jpeg);
+    height: 90%;
+    width: 100%;
+  }
+  .offerOne h1 {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 43px;
+    letter-spacing: 3%;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 48px;
+  }
+  .offerOne h2 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 110%;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 277.63px;
+    padding-left: 30px;
+  }
+  .offerTwo h1 {
+    color: rgb(126, 182, 147);
+    font-family: Rosa Marena;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 3%;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 48px;
+  }
+  .offerTwo h2 {
+    color: rgb(39, 76, 91);
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 47px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-left: 30px;
+    width: 277.63px;
+  }
+  .data {
+    display: none;
+  }
+  .shop {
+    text-align: center;
+    padding-bottom: 36px;
+  }
+  .shop h2 {
+    /* 1 */
+    color: rgb(126, 182, 147);
+    font-family: Rosa Marena;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 3%;
+  }
+  .shop h1 {
+    color: rgb(39, 76, 91);
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 59px;
+    letter-spacing: 0%;
+  }
+  .product {
+    padding-top: 20px;
+    padding-bottom: 33px;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 350px;
+    justify-content: center;
+    gap: 17px;
+  }
+  .oil,
+.flour,
+.porridge,
+.organic__products {
+    border-radius: 30px;
+    background-color: rgb(249, 248, 248);
+  }
+  .shop__product {
+    padding-top: 10px;
+    width: 240px;
+    height: 290px;
+    justify-content: center;
+  }
+  .watch {
+    width: 255px;
+    height: 79px;
+    border-radius: 16px;
+    background: rgb(39, 76, 91);
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0%;
+  }
+  .tag {
+    margin-top: 30px;
+    width: 77px;
+    height: 31px;
+    border-radius: 8px;
+    background: rgb(39, 76, 91);
+    color: rgb(255, 255, 255);
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .shop p {
+    color: rgb(39, 76, 91);
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .reviews {
+    width: 100vw;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    text-align: center;
+  }
+  .reviews h2 {
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 62px;
+    color: rgb(126, 182, 147);
+    font-family: Rosa Marena;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 55px;
+    letter-spacing: 3%;
+  }
+  .reviews h1 {
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: rgb(39, 76, 91);
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 59px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .reviews p {
+    padding-left: 20px;
+    text-align: center;
+    max-width: 90%;
+    color: rgb(82, 92, 96);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 165.4%;
+    letter-spacing: 0%;
+  }
+  .line {
+    display: none;
+  }
+  .bubble__cards {
+    display: none;
+  }
+  .offers__month {
+    display: none;
+  }
+  .competitive__advantage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-image: url(img/backImage1.png);
+    background-repeat: no-repeat;
+  }
+  .backimage {
+    width: 110%;
+    height: 110%;
+    justify-content: center;
+  }
+  .information {
+    padding-top: 30px;
+    padding-right: 30px;
+    width: 100%;
+    height: 100%;
+  }
+  .information h1 {
+    color: rgb(126, 182, 147);
+    font-family: Rosa Marena;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 9%;
+  }
+  .information h2 {
+    color: rgb(39, 76, 91);
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0%;
+  }
+  .information h3 {
+    display: none;
+  }
+  .information p {
+    display: none;
+  }
+  .newslatteer {
+    width: 100%;
+    height: 120%;
+    background-image: url(img/newslatteer.png);
+    margin-top: 25px;
+    margin-left: 26px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .newslatteer h1 {
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 464px;
+  }
+  .newslatteer button {
+    margin-top: 25px;
+    margin-left: 20%;
+    width: 220px;
+    height: 79px;
+    border-radius: 16px;
+    background: rgb(126, 182, 147);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .email-input {
+    margin-left: 20%;
+    width: 220px;
+    height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    background-color: white;
+    color: rgb(171, 171, 171);
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .footer {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+  }
+  .ContactUs {
+    color: rgb(82, 92, 96);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 200.9%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .SocialMedia {
+    justify-content: center;
+    text-align: center;
+  }
+  .SocialMedia p {
+    width: 300px;
+    color: rgb(82, 92, 96);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 200%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .UtilityPages p {
+    color: rgb(82, 92, 96);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 272.9%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+}/*# sourceMappingURL=adaptive.css.map */

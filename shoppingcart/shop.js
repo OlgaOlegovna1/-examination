@@ -10,6 +10,8 @@ function changeItemQuantity(index, change) {
     displayCartItems();
 }
 
+
+/*отображает элементы корзины на странице.*/
 function displayCartItems() {
     cartList.innerHTML = '';
 
@@ -38,26 +40,15 @@ function displayCartItems() {
 
 displayCartItems();
 
-/**/
-
-function calculateTotal() {
-    let totalQuantity = 0;
+/*считает количество элементов в корзине и подсчитывает общую цену:*/
+function calculateCartTotal() {
+    let totalItems = 0;
     let totalPrice = 0;
 
-    cartItems.forEach(item => {
-        totalQuantity += item.quantity;
+    cartItems.forEach((item) => {
+        totalItems += item.quantity;
         totalPrice += item.price * item.quantity;
     });
 
-    return { totalQuantity, totalPrice };
+    return { totalItems, totalPrice };
 }
-
-function updateCartSummary() {
-    const { totalQuantity, totalPrice } = calculateTotal();
-
-    document.getElementById('total-quantity').textContent = totalQuantity;
-    document.getElementById('total-price').textContent = totalPrice.toFixed(2);
-}
-
-// Вызываем функцию для обновления информации о корзине после каждого изменения количества товаров
-updateCartSummary();

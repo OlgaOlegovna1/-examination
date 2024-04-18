@@ -11,7 +11,7 @@ function search() {
 }
 
 //функция передачи адреса емайл на сервер
-//замените "https://example.com/subscribe" на ваш реальный адрес сервера для подписки на рассылку.
+//заменить "https://example.com/subscribe" на ваш реальный адрес сервера для подписки на рассылку.
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('.newslatteer form');
     form.addEventListener('submit', function(e) {
